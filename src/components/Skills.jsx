@@ -22,7 +22,7 @@ const Skills = () => {
     <section id='skills'>
       <SecHeader title="Skills" />
       <div className='md:flex m-12 md:mx-20 md:my-12 md:space-x-5'>
-        <div className='md:w-6/12 m-auto mb-10 md:mb-0'>
+        <div className='md:w-6/12 mx-auto mb-10 md:mb-0'>
           <Skill name="HTML" perc={90} />
           <Skill name="CSS" perc={90} />
           <Skill name="JavaScript" perc={80} />
@@ -33,7 +33,7 @@ const Skills = () => {
           <Skill name="Java" perc={90} />
           <Skill name="Spring" perc={60} />
         </div>
-        <div className='card m-auto md:80 mt-2'>
+        <div className='card m-auto mt-2 w-80'>
           <div className='text-xl font-bold mx-auto w-max'>Personal skills</div>
           <ul className='text-lg list-disc ml-5 mt-5'>
             <li>Problem solving</li>
