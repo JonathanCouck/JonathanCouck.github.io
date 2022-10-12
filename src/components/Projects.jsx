@@ -9,7 +9,7 @@ const ProjectMd = ({title, picSrc, text, fGit, bGit, website, showAll, i}) => {
     <div className={`easer card hover:scale-[1.04] easer rounded-[2rem] shadow-2xl h-[32rem] max-w-[26rem] ${(i>=2&&!showAll)?'hidden':null}`}>
       <img src={picSrc+".png"} alt={title} className='rounded-2xl h-[12rem] w-full'/>
       <div className='m-5 h-[18rem]'>
-        <h1 className='font-bold mb-5 text-xl'>{title}</h1>
+        <h1 className='font-bold mb-5 text-big'>{title}</h1>
         <div className='text-justify h-[11rem]'>{text}</div>
         <div className='flex justify-between'>
           {website?<a href={website} target="_blank" rel="noreferrer" className='nav-style flex text-sm p-0 px-2'><FiLink2 size={25} className='mr-1 my-auto'/> <span className='my-auto'>Website</span></a>:null}
@@ -28,9 +28,9 @@ const ProjectSm = ({title, picSrc, text, fGit, bGit, website, showAll, i, opened
       <div>
         {title}
         <div className='flex flex-wrap mt-2'>
-          {website?<a href={website} target="_blank" rel="noreferrer" className='nav-style text-xs flex text-sm p-0 px-2'><FiLink2 size={15} className='mr-1 my-auto'/> <span className='my-auto'>Web</span></a>:null}
-          {fGit?<a href={fGit} target="_blank" rel="noreferrer" className='nav-style text-xs flex text-sm p-0 px-2'><AiFillGithub size={15} className='mr-1 my-auto'/> <span className='my-auto'>FE</span></a>:null}
-          {bGit?<a href={bGit} target="_blank" rel="noreferrer" className='nav-style text-xs flex text-sm p-0 px-2'><AiFillGithub size={15} className='mr-1 my-auto'/> <span className='my-auto'>BE</span></a>:null}
+          {website?<a href={website} target="_blank" rel="noreferrer" className='nav-style text-small flex p-0 px-2'><FiLink2 size={15} className='mr-1 my-auto'/> <span className='my-auto'>Web</span></a>:null}
+          {fGit?<a href={fGit} target="_blank" rel="noreferrer" className='nav-style text-small flex p-0 px-2'><AiFillGithub size={15} className='mr-1 my-auto'/> <span className='my-auto'>FE</span></a>:null}
+          {bGit?<a href={bGit} target="_blank" rel="noreferrer" className='nav-style text-small flex p-0 px-2'><AiFillGithub size={15} className='mr-1 my-auto'/> <span className='my-auto'>BE</span></a>:null}
         </div>
       </div>
       {opened?<div className='relative col-span-2'>{text}</div>:null}

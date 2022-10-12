@@ -17,15 +17,15 @@ const Experience = () => {
       <div className='md:flex text-justify w-max mx-auto my-12'>
         <div className='flex flex-nowrap overflow-x-auto md:block w-60 md:w-48 md:ml-20 mx-auto border-y md:border-y-0'>
           {
-            e.map((exp, i) => <div onClick={() => setSelected(i)} className={`text-sm px-2 py-5 border-l-2 cursor-pointer hover:bg-tertiary ${i===selected?'pl-4 text-text border-text bg-tertiary font-bold':'border-secondary'} easer`}>{exp.title}</div>)
+            e.map((exp, i) => <div onClick={() => setSelected(i)} className={`text-small px-2 py-5 border-l-2 cursor-pointer hover:bg-tertiary ${i===selected?'pl-4 text-text border-text bg-tertiary font-bold':'border-secondary'} easer`}>{exp.title}</div>)
           }
         </div>
         <div className='px-2 md:px-5 py-2 max-w-sm md:max-w-none'>
           <div className='ml-12'>
-            <h1 className='text-xl md:text-2xl'>{e[selected].title}</h1>
-            <span className='italic text-xs md:text-sm'>{e[selected].fromTo}</span>
+            <h1 className='text-vbig'>{e[selected].title}</h1>
+            <span className='italic text-small'>{e[selected].fromTo}</span>
           </div>
-          <p className='md:max-w-xl text-sm md:text-md mx-12 mt-5'>{e[selected].text}</p>
+          <p className='md:max-w-xl text-big mx-12 mt-5'>{e[selected].text}</p>
         </div>
       </div>
     </section>

@@ -33,9 +33,9 @@ const Skills = () => {
           <Skill name="Java" perc={90} />
           <Skill name="Spring" perc={60} />
         </div>
-        <div className='card m-auto mt-2 w-80'>
-          <div className='text-xl font-bold mx-auto w-max'>Personal skills</div>
-          <ul className='text-lg list-disc ml-5 mt-5'>
+        <div className='card m-auto mt-2 w-68'>
+          <div className='text-vbig font-bold mx-auto w-max'>Personal skills</div>
+          <ul className='text-big list-disc ml-5 mt-5'>
             <li>Problem solving</li>
             <li>Stress resistance</li>
             <li>Flexible</li>

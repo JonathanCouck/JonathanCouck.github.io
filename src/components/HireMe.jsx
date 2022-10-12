@@ -33,7 +33,7 @@ const HireMe = () => {
     <section id='hireMe'>
       <SecHeader title="Hire me!" />
       <div className='md:grid md:grid-cols-5 mt-12 pb-40 mx-12 md:mx-20 space-y-10'>
-        <span className='col-span-3 my-auto text-lg'>
+        <span className='col-span-3 my-auto text-big'>
           Are you looking for a nice, clean website with front-end, and maybe a back-end as well? <br/> Contact me through one of the links on the bottom left of the screen, or send an email through this form, and I'll contact you back as soon I can!
         </span>
         <form ref={form} onSubmit={sendEmail} className='col-span-2 bg-secondary p-5 rounded-lg border-2 border-text space-y-5'>
